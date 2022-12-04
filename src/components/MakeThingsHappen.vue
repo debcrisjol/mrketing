@@ -26,7 +26,7 @@
                 <input type="name" placeholder="Your Name*">
                 <input type="email" placeholder="Your Email*">
                 <input type="phone" placeholder="Your Phone Number*">
-                <button>Get a Callback</button>
+                <button @click='submit'>Get a Callback</button>
                 <span class="submydata">By submitting my data I agree to be contacted</span>
             </div>
 
@@ -39,7 +39,7 @@
 
 <script>
 export default {
-
+   
 }
 </script>
 

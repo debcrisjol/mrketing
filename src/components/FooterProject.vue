@@ -1,6 +1,6 @@
 <template>
     <div>
-        <fotter>
+        <div class="fott">
             <div class="uno">
                 <h1>Grow Your Online Business Strategically, and Improve Customer Retention.</h1>
                 <div class=" flex icone">
@@ -32,7 +32,7 @@
                     <li>{{ lista }}</li>
                 </ul>
             </div>
-        </fotter>
+        </div>
         <div class="flex">
             <span>© 2020 • Avada Consultant • Powered by WordPress</span>
             <span>Call Us (555) 802-1234</span>
@@ -59,7 +59,7 @@ h1 {
     width: 40%;
 }
 
-fotter {
+.fott {
     display: flex;
     justify-content: space-between;
 
@@ -71,7 +71,7 @@ ul li {
     color: grey;
     height: 5px;
 }
-span{color:grey;}
+span{color:grey; padding:1% 5%;}
 .services,
 .company,
 .resources {

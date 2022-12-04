@@ -1,13 +1,13 @@
 <template>
   <div id="app">
 
-    <HeadProject :navBarHeader="navBar" />
+    <HeadProject :navBarHeader="navBar"/>
     <MainProject :section="section" :brands="brands" />
     <CardsEmployee :cards="cards" />
     <WorkWithus :build="build" :awards="awards" />
     <ConsultantWork />
     <MarketinResourses :technique="technique" />
-    <MakeThingsHappen />
+    <MakeThingsHappen  />
     <FooterProject :services="services" :resources="resources" :company="company" />
 
   </div>

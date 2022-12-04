@@ -12,21 +12,23 @@
             <div class="unlockpotential"><h1> Unlock Your Online Growth Potential</h1>
             <p>Online marketing to secure customer retetion, leads and sales. We focus on the bigger picture.</p>
             <button class="btn services">Our Servises <i class="fa-solid fa-arrow-right"></i></button></div>
+            
             <div class="form">
-
                 <div class="consultant-expert">
                 <img src="../assets/marketing-consultant-expert.jpg" alt="consultant-expert">
                 <h3>Richard Madsen</h3>
                 <p>Marketing Consultat Expert</p>
                 <i class="fa-solid fa-phone"> </i><span class="tel">(555)802-1234 </span></div>
 
-                <input type="name" placeholder="Your Name*">
-                <input type="email" placeholder="Your Email*">
-                <input type="phone" placeholder="Your Phone Number*">
-                <button>Get a Callback</button>
+                <input type="name" placeholder="Your Name*"  v-model ="name">
+                <input type="email" placeholder="Your Email*"  v-model ="email">
+                <input type="phone" placeholder="Your Phone Number*"  v-model ="phone">
+                <button @click='submit'>Get a Callback</button>
                 <span class="submydata">By submitting my data I agree to be contacted</span>
             </div>
+           
         </div> 
+     
     </div>
 
     
@@ -36,7 +38,18 @@
   export default {
     props: {
     navBarHeader: Array,
+  },data(){return{
+    name:'',
+    email:'',
+    phone:''
   }
+},
+methods: {
+  submit() {
+    alert (`${this.name} will be contacted at this phone number ${this.phone} or by email at ${this.email}`)
+    this.$emit('call')
+    }
+}
   }
   </script>
   
