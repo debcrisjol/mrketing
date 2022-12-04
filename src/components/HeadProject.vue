@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div>
         <nav class="navbar-menu">
 
           <img class="logo" src="../assets/avada-marketing-logo.png" alt="logo avada">
@@ -36,7 +36,7 @@
   export default {
     props: {
     navBarHeader: Array,
-  },
+  }
   }
   </script>
   

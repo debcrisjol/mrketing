@@ -2,7 +2,7 @@
   <div class="section">
 
     <div class="sezioni flex" v-for='(elem, index) in section' :style="`${elem.invert}`" :key="index">
-      <!-- "index ==1 ? {rotate: '180deg' }:{rotate: '0deg'}" -->
+
       <img class="pics" :style="`${elem.invert}`" :src="require(`../assets/${elem.image}`)" alt="#">
 
       <div :style="`${elem.invert}`" class="sezionip">
@@ -43,39 +43,9 @@
 
 export default {
   name: 'MainProject',
+  props: ['section', 'brands']
 
-  data() {
-
-    return {
-      section: [
-        {
-          image: "pic1.png",
-          titolosmall: "Business Growth",
-          titolo: "Increase Brand Awareness",
-        },
-        {
-          invert: "rotate:180deg",
-          image: "pic2.png",
-          titolosmall: "Investors In People",
-          titolo: "In-House Sales Training",
-
-        },
-        {
-          image: "pic3.png",
-          titolosmall: "Social Media Analysis",
-          titolo: "Harness Your Social Proof"
-        }
-
-      ],
-      brands: ["abstract.png", "cglobal.png", "next.png", "hemisferio.png", "spaces.png", "digitalbox.png"]
-
-    }
-    // props: {
-    //   msg: String
-    // }
-  }
-}
-</script>
+}</script>
 
 <style lang="scss">
 button {
@@ -91,15 +61,40 @@ button {
   }
 }
 
+@keyframes mymove {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
 .pics {
   width: 50%;
   height: 40%;
 
+
+
+
   &:hover {
-    transform: translateY(10%);
-   transition: all .3s ease-in-out;
+    animation: mymove 5s infinite;
   }
 }
+
 
 .sezioni {
   padding: 5% 15%;
@@ -107,8 +102,11 @@ button {
 
 .sezionip {
   width: 40%;
-  &:hover{ transform: translateY(15%);
-transition: all .2s ease-in-out;}
+
+  &:hover {
+    transform: translateY(15%);
+    transition: all .9s ease-in-out;
+  }
 }
 
 .section {
@@ -157,7 +155,10 @@ span {
   justify-content: space-between;
   align-items: center;
 }
-.bt{ color:#f8fcff;
-background-color: #fcb791;
-width:15%;}
+
+.bt {
+  color: #f8fcff;
+  background-color: #fcb791;
+  width: 15%;
+}
 </style>
