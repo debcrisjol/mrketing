@@ -76,7 +76,12 @@ color:white;
 width:25%;
 padding:5% 20%;
 position: relative;}
-.form{width:20%;
+.btn {color:black;
+background-color: white;}
+
+  </style>
+  <style lang="scss">
+  .form{width:20%;
     height:60%;
 position:absolute;
 top:30%;
@@ -101,8 +106,6 @@ color:#424242}
 .form input{ height:30px;
 border-radius: 10px;
 border-color: #d3d0d085;}
-.btn {color:black;
-background-color: white;}
 
   </style>
   

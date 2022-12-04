@@ -29,13 +29,15 @@ export default {
 
 .container {
     margin: 3% 5%;
+    &:hover{color:#668660;
+    }
 
 
 }
 
 h2 {
     margin: 0;
-    font-size: x-large;
+    font-size: larger;
 }
 
 img {

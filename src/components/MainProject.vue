@@ -100,7 +100,7 @@ button {
   padding: 5% 15%;
 }
 
-.sezionip {
+.sezionip {font-size: larger;
   width: 40%;
 
   &:hover {

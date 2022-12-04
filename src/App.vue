@@ -5,7 +5,10 @@
     <MainProject :section="section" :brands="brands" />
     <CardsEmployee :cards="cards" />
     <WorkWithus :build="build" :awards="awards" />
-    <ConsultantWork/>
+    <ConsultantWork />
+    <MarketinResourses :technique="technique" />
+    <MakeThingsHappen />
+    <FooterProject :services="services" :resources="resources" :company="company" />
 
   </div>
 </template>
@@ -16,6 +19,9 @@ import MainProject from './components/MainProject.vue'
 import CardsEmployee from './components/CardsEmployee.vue'
 import WorkWithus from './components/WorkWithus.vue';
 import ConsultantWork from './components/ConsultantWork.vue';
+import MarketinResourses from './components/MarketinResourses.vue';
+import MakeThingsHappen from './components/MakeThingsHappen.vue';
+import FooterProject from './components/FooterProject.vue';
 
 
 export default {
@@ -25,7 +31,10 @@ export default {
     HeadProject,
     CardsEmployee,
     WorkWithus,
-    ConsultantWork
+    ConsultantWork,
+    MarketinResourses,
+    MakeThingsHappen,
+    FooterProject
   },
 
   data() {
@@ -138,10 +147,22 @@ export default {
           contain: "National Excellence Agencie Award Winner 2020"
         }
 
-      ]
-
-
-
+      ],
+      technique: [
+        {
+          image: "blog-posts-6.jpg",
+          title: "Marketing Tips And Tricks For Your Website"
+        }, {
+          image: "blog-posts-5.jpg",
+          title: "How to Write Stunning Blog Post Titles"
+        }, {
+          image: "blog-posts-4.jpg",
+          title: "Techniques to Reduce Facebook Ads Spend"
+        }
+      ],
+      services: ['Marketing Plan', 'Sales Development','Digital Marketing','Pricing','Why Us','Case Studies'],
+      resources:['Learning Center','Video Tutorials','Customers','Blog'],
+      company:['Who We Are','Contact Us','Careers']
     }
 
   }

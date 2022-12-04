@@ -6,7 +6,7 @@
                 <img :src="require(`../assets/${person.image}`)">
 
 
-                <p>{{ person.about }}</p>
+                <p><b> {{ person.about }}</b></p>
                 <h2>{{ person.score }}</h2>
                 <span>{{ person.role }}</span>
             </div>
@@ -43,7 +43,7 @@ span {
 }
 
 p {
-    font-size: large;
+    font-size:larger;
 
     &:hover {
         color: #eb621f;
@@ -52,7 +52,7 @@ p {
 
 h1 {
     text-align: center;
-    margin: 7%;
+    margin: 4%;
 }
 
 h2 {
