@@ -24,7 +24,8 @@ div {
 }
 img{width:330px;
 height:230px;
-&:hover {
+
+&:hover {box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.229);
      filter: sepia(30%) brightness(110%);
  }}
 .explore {

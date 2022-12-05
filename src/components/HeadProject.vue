@@ -46,7 +46,7 @@
 },
 methods: {
   submit() {
-    alert (`${this.name} will be contacted at this phone number ${this.phone} or by email at ${this.email}`)
+    alert(`${this.name} will be contacted at this phone number ${this.phone} or by email at ${this.email}`)
     this.$emit('call')
     }
 }
@@ -54,6 +54,7 @@ methods: {
   </script>
   
   <style scoped lang="scss">
+  alert{background-color: #efd43f;}
   .navbar-menu{ padding:0 10%;
     height:10vh;
    color:#424242;
@@ -105,7 +106,8 @@ display:flex;
 flex-direction: column;
 justify-content: space-between;
 padding:10px 15px;
-border-radius: 10px;}
+border-radius: 10px;
+box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.229);}
 .form h3{color:black;}
 .form img {width:20%;
 border-radius: 50%; }

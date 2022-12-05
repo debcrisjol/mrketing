@@ -4,8 +4,6 @@
         <div class="flex cards">
             <div v-for="(person, index) in cards" :key="index">
                 <img :src="require(`../assets/${person.image}`)">
-
-
                 <p><b> {{ person.about }}</b></p>
                 <h2>{{ person.score }}</h2>
                 <span>{{ person.role }}</span>
@@ -43,7 +41,7 @@ span {
 }
 
 p {
-    font-size:larger;
+    font-size: larger;
 
     &:hover {
         color: #eb621f;
@@ -62,7 +60,9 @@ h2 {
 }
 
 .cards {
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.229);
     margin: 0 8%;
+    padding: 1%;
 }
 
 .button-center {
@@ -70,8 +70,12 @@ h2 {
     padding: 2%;
 }
 
+img {
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.229);
+}
+
 img:hover {
-    filter: sepia(30%)  brightness(120%);
+    filter: sepia(30%) brightness(120%);
 
 
 }

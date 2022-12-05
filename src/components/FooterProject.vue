@@ -53,10 +53,14 @@ export default {
 <style lang="scss" scoped>
 h1 {
     font-size: 25px;
+    &:hover {color:orange;
+    font-size: 30px;
+font-style: oblique;}
 }
-
+i:hover {color:orange;
+font-size:xx-large;}
 .uno {
-    width: 40%;
+    width: 50%;
 }
 
 .fott {
@@ -65,21 +69,37 @@ h1 {
 
     padding: 1% 15%;
 }
-.icone{width:200px;}
+.icone{width:200px;
+height:50px;}
+// ul {
+// margin:3%;
+// }
 ul li {
+    height:25px;
     list-style-type: none;
     color: grey;
-    height: 5px;
+    &:hover{border-right:5px solid rgba(138, 137, 136, 0.559);
+        
+        
+        font-size:larger;
+    color:orangered;}
 }
 span{color:grey; padding:1% 5%;}
 .services,
 .company,
-.resources {
+.resources { width:35%;
+    height:400px;
+    align-content:center;
     display: flex;
     flex-direction: column;
+    border-radius:20px;
+    &:hover{  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.229);
+    }
 }
 
 h3 {
-    padding-left: 35px;
+    padding-left: 40px;
+    &:hover{color:orangered;
+    font-size: x-large;}
 }
 </style>

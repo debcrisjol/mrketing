@@ -55,9 +55,14 @@ button {
   border-radius: 10px;
   color: white;
   background-color: orange;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.229);
 
   &:hover {
     background-color: #f76210;
+    width:310px;
+    font-size: 15px;
+    color:black;
+    box-shadow: 1px 3px 3px 0px grey ;
   }
 }
 
@@ -67,7 +72,7 @@ button {
   }
 
   25% {
-    transform: translate(5px, 5px) rotate(5deg);
+    transform: translate(10px, 10px) rotate(10deg);
   }
 
   50% {
@@ -75,7 +80,7 @@ button {
   }
 
   75% {
-    transform: translate(-5px, 5px) rotate(-5deg);
+    transform: translate(-10px, 10px) rotate(-10deg);
   }
 
   100% {
@@ -91,7 +96,7 @@ button {
 
 
   &:hover {
-    animation: mymove 5s infinite;
+    animation: mymove 3s infinite;
   }
 }
 
@@ -130,6 +135,7 @@ button {
   border: 1px solid rgb(213, 213, 213);
   border-radius: 10px;
   padding: 2px 7px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.229);
 
 }
 
